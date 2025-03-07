@@ -90,7 +90,7 @@ export default function Rules() {
             (родители или школа участника).
           </p>
         </div>
-        <div>
+        <div> 
           <h2 className="text-xl sm:text-2xl font-bold mb-2">8. Контакты:</h2>
           <p className="text-base sm:text-lg">
             +7 (778) 776 23 01 (Жан)

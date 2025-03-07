@@ -71,7 +71,7 @@ export default function RegistrationForm() {
               type={name === "email" ? "email" : name === "phone" ? "tel" : "text"}
               name={name}
               placeholder={placeholder}
-              value={formData[name as keyof typeof formData]}
+              value={String(formData[name as keyof typeof formData] ?? "")}
               onChange={handleChange}
               required
             />

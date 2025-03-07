@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
-
+import { NextRequest } from "next/server";
 dotenv.config();
 
-export async function POST(req) {
+export async function POST(req: NextRequest) {
   try {
     const data = await req.json();
     console.log("Полученные данные:", data);
@@ -21,7 +21,7 @@ export async function POST(req) {
 
     const mailOptions = {
       from: process.env.YANDEX_USER, // Должен совпадать с user
-      to: "anrizhan555@gmail.com",
+      to: "matpapki@gmail.com",
       subject: "Новая регистрация",
       text: `
         📌 Новая заявка:
