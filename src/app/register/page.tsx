@@ -57,7 +57,7 @@ export default function RegistrationForm() {
         </h2>
         <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:gap-4">
           {[
-            ["participantName", "ФИО участника"],
+            ["participantName", "ФИ участника на английском"],
             ["parentName", "ФИО родителя/опекуна"],
             ["region", "Регион/город/район"],
             ["school", "Название школы"],
