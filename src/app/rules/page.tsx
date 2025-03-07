@@ -91,7 +91,7 @@ export default function Rules() {
           </p>
         </div>
         <div>
-          <h2 className="text-xl sm:text-2xl font-bold mb-2">7. Контакты:</h2>
+          <h2 className="text-xl sm:text-2xl font-bold mb-2">8. Контакты:</h2>
           <p className="text-base sm:text-lg">
             +7 (778) 776 23 01 (Жан)
             +7 (707) 645 07 70 (Павел)
