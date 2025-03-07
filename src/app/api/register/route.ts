@@ -11,13 +11,17 @@ export async function POST(req: NextRequest) {
 
     const transporter = nodemailer.createTransport({
       host: "smtp.yandex.ru",
-      port: 465,
-      secure: true,
+      port: 587,  // Меняем порт
+      secure: false, // Безопасное соединение установится через STARTTLS
       auth: {
-        user: process.env.YANDEX_USER, // Используем переменную окружения
+        user: process.env.YANDEX_USER,
         pass: process.env.YANDEX_PASS,
       },
+      tls: {
+        rejectUnauthorized: false, // Игнорируем самоподписанные сертификаты
+      },
     });
+    
 
     const mailOptions = {
       from: process.env.YANDEX_USER, // Должен совпадать с user
