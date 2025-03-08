@@ -36,7 +36,7 @@ export default function Rules() {
             </a>
           </p>
           <ul className="list-disc pl-4 mt-2 space-y-1 text-base sm:text-lg">
-            <li>Даты регистрации: 10-28 марта 2025 года до 18:00.</li>
+            <li>Даты регистрации: 10 марта - 4 апреля 2025 года до 18:00.</li>
             <li>Необходимо указать личные данные, школу и контактную информацию.</li>
           </ul>
         </div>
