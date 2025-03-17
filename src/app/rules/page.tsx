@@ -32,7 +32,7 @@ export default function Rules() {
               href="https://abcc-nine.vercel.app/rules"
               className="text-blue-600 underline"
             >
-              almaty_bullet_coding_cup.com
+              https://abcc-nine.vercel.app/
             </a>
           </p>
           <ul className="list-disc pl-4 mt-2 space-y-1 text-base sm:text-lg">
