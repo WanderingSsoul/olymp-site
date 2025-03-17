@@ -29,7 +29,7 @@ export default function Rules() {
           <p className="text-base sm:text-lg">
             Регистрация участников проводится на сайте{" "}
             <a
-              href="http://almaty_bullet_coding_cup.com/"
+              href="https://abcc-nine.vercel.app/rules"
               className="text-blue-600 underline"
             >
               almaty_bullet_coding_cup.com
