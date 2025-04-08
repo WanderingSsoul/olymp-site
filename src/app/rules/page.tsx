@@ -1,13 +1,30 @@
+<div className="absolute inset-0">
+  <img
+    src="/images/fm.jpg"
+    alt="фон"
+    className="w-full h-full object-cover object-center opacity-50"
+  />
+  <div className="absolute inset-0 bg-black/30" />
+</div>
 export default function Rules() {
   return (
-    <div className="flex flex-col items-center justify-start min-h-screen bg-gradient-to-r from-blue-400 to-purple-500 text-center p-4 sm:p-6">
-      {/* Заголовок */}
+    <div className="relative min-h-screen flex flex-col items-center justify-start bg-gradient-to-r from-blue-400 to-purple-500 text-center p-4 sm:p-6">
+      {/* Фон */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/images/fm.jpg"
+          alt="фон"
+          className="w-full h-full object-cover object-center opacity-100"
+        />
+        <div className="absolute inset-0 bg-black/20" />
+      </div>
+
       <h1 className="text-4xl sm:text-5xl font-extrabold drop-shadow-lg animate-pulse mb-6 text-black">
         📜 Положение Almaty Bullet Coding Cup
       </h1>
 
       {/* Основной контент */}
-      <div className="bg-white p-4 sm:p-8 rounded-xl shadow-lg max-w-lg sm:max-w-4xl text-left text-black space-y-6">
+      <div className="bg-white/50 backdrop-blur-md p-4 sm:p-8 rounded-xl shadow-lg max-w-lg sm:max-w-4xl text-left text-black space-y-6">
         {/* Общие положения */}
         <div>
           <h2 className="text-xl sm:text-2xl font-bold mb-2">1. Общие положения</h2>
@@ -36,7 +53,7 @@ export default function Rules() {
             </a>
           </p>
           <ul className="list-disc pl-4 mt-2 space-y-1 text-base sm:text-lg">
-            <li>Даты регистрации: 20 марта - 12 апреля 2025 года до 18:00.</li>
+            <li>Даты регистрации: 9 апреля - 3 мая 2025 года до 18:00.</li>
             <li>Необходимо указать личные данные, школу и контактную информацию.</li>
           </ul>
         </div>
@@ -46,14 +63,14 @@ export default function Rules() {
           <h2 className="text-xl sm:text-2xl font-bold mb-2">3. Этапы олимпиады</h2>
           <h3 className="text-lg sm:text-xl font-semibold mt-4">📅 Отборочный этап</h3>
           <ul className="list-disc pl-4 mt-2 space-y-1 text-base sm:text-lg">
-            <li>Дата: 13 апреля 2025 (10:00 - 13:00, GMT+5).</li>
+            <li>Дата: 4 мая 2025 (10:00 - 13:00, GMT+5).</li>
             <li>Формат: индивидуальный контест из 5 задач (ICPC формат).</li>
             <li>Доступ: ссылка, логин и пароль будут отправлены на e-mail.</li>
           </ul>
           <h3 className="text-lg sm:text-xl font-semibold mt-4">📅 Финальный этап</h3>
           <ul className="list-disc pl-4 mt-2 space-y-1 text-base sm:text-lg">
             <li>Проходят 64 человека по результатам отбора.</li>
-            <li>Дата: 27 апреля 2025 года.</li>
+            <li>Дата: 11 мая 2025 года.</li>
             <li>Место проведения: Алматы, бульвар Бухар Жырау, 36.</li>
             <li>Формат: по олимпийской системе (1 vs 1).</li>
           </ul>
@@ -110,7 +127,7 @@ export default function Rules() {
       </div>
 
       {/* Декоративный текст */}
-      <div className="sm:text-4xl text-lg sm:text-xl font-bold mt-6 sm:mt-10 opacity-90 text-black">
+      <div className="sm:text-4xl text-lg sm:text-xl font-bold mt-6 sm:mt-10 opacity-90 text-white">
         ⚡ Участвуй и стань лучшим программистом ABCC! ⚡
       </div>
 

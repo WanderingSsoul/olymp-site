@@ -1,5 +1,12 @@
 "use client";
-
+<div className="absolute inset-0">
+  <img
+    src="/images/fon.jpg"
+    alt="фон"
+    className="w-full h-full object-cover object-center opacity-50"
+  />
+  <div className="absolute inset-0 bg-black/30" />
+</div>
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -51,8 +58,16 @@ export default function RegistrationForm() {
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 p-4 sm:p-8">
-      <div className="bg-white text-gray-900 p-6 sm:p-8 rounded-2xl shadow-xl w-full max-w-sm sm:max-w-md">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center text-yellow-300">
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/images/fon_reg.jpg"
+          alt="фон"
+          className="w-full h-full object-cover object-center opacity-70"
+        />
+        <div className="absolute inset-0 bg-black/30" />
+      </div>
+      <div className="bg-white/70 backdrop-blur-md text-gray-900 p-6 sm:p-8 rounded-2xl shadow-2xl w-full max-w-sm sm:max-w-md">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center text-white-400">
           Регистрация
         </h2>
         <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:gap-4">
@@ -67,7 +82,7 @@ export default function RegistrationForm() {
           ].map(([name, placeholder]) => (
             <input
               key={name}
-              className="p-3 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-yellow-300 outline-none transition-all text-sm sm:text-base"
+              className="p-3 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-blue-300 outline-none transition-all text-sm sm:text-base"
               type={name === "email" ? "email" : name === "phone" ? "tel" : "text"}
               name={name}
               placeholder={placeholder}
@@ -76,19 +91,19 @@ export default function RegistrationForm() {
               required
             />
           ))}
-          <label className="flex items-center gap-2 sm:gap-3 cursor-pointer text-yellow-700 text-sm sm:text-base">
+          <label className="flex items-center gap-2 sm:gap-3 cursor-pointer text-white-700 text-sm sm:text-base">
             <input
               type="checkbox"
               name="offline"
               checked={formData.offline}
               onChange={handleChange}
-              className="w-4 h-4 sm:w-5 sm:h-5 accent-yellow-300"
+              className="w-4 h-4 sm:w-5 sm:h-5 accent-white-300"
             />
             Может участвовать оффлайн
           </label>
           <button
             type="submit"
-            className="mt-3 sm:mt-4 bg-yellow-300 text-indigo-900 font-semibold p-3 rounded-lg shadow-md hover:bg-yellow-400 transition-all text-sm sm:text-base"
+            className="mt-3 sm:mt-4 bg-yellow-300 text-indigo-900 font-semibold p-3 rounded-lg shadow-md hover:bg-red-400 transition-all text-sm sm:text-base"
           >
             Отправить
           </button>
